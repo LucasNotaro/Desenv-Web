@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../firebase"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../LUCASWEB"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "PROJETOSWEB"
+	}
+}
