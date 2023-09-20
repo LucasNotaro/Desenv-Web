@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Fatec</title>
+</head>
+<body>
+
+<h2>Roupas Xique Xique</h2>
+<h3>Cadastro</h3>
+    <form>
+  
+
+    <Fieldset>
+        <legend>Dados Pessoais</legend>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="NomeCliente" maxlength="30" minlength="10" size="50" required>
+
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="password" maxlength="12" placeholder="Senha com letras e números">
+        
+        
+    </Fieldset>
+
+
+
+    <Fieldset>
+        <legend>Dados De Cobrança</legend>
+
+            <label for="cidade">Cidade</label>
+            <input type="text" name="cidade" id="cidade" value="Votoratim" disabled>
+
+            <label for="UF">Estado</label>
+            <input type="text" name="UF" id="UF" value="SP">
+            <select>
+                <optgroup label="Região Norte">
+                    <option value="Amazonas">AM</option>
+                    <option value="Acre">AC</option>
+                </optgroup>
+
+                <optgroup label="Região Sul">
+                    <option value="Santa Catarina">SC</option>
+                    <option value="Rio Grande Do Sul">RS</option>
+                </optgroup>
+
+            </select>
+            <input type="checkbox" name="Express" id="envio" checked>
+            <label for="Envio">Express?</label>
+
+            <input type="radio" id="Estado Civil" name="Estado Civil" value="Casado">
+            <label for="Casado">Casado</label>
+
+            <input type="radio" id="Estado Civil" name="Estado Civil" value="Solteiro">
+            <label for="Solteiro">Solteiro</label>
+
+            <label for="Cor">Cor</label>
+            <input type="color" id="Cor preferida" name="Cor preferida" value="Cor preferida">
+
+            <label for="Satisfação">Grau de satisfação</label>
+            <input type="range" min="0" max="10" step="2" id="Satisfação" name="Satisfação" value="Satisfação">
+            
+
+    </Fieldset>
+
+    <button>Cadastrar</button>
+    <input type="submit" value="Cadastrar">
+   
+
+    </form>
+
+
+</body>
+</html>
