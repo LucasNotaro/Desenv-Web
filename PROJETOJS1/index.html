@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+</head>
+
+
+<body>
+
+
+    
+<h2>Cálculo de números</h2>
+<label id="ln1">número 1</label>
+<input type="text" name="vn1" id="n1">
+<input type="button" value="Somar" onclick="somar()">
+<input type="button" value="multiplicar" onclick="multiplicar()">
+
+<script>  
+    function somar()
+{
+    let x = Number(document.getElementById("n1").value);
+    x = x + 190;
+    console.log("valor de x" + x);
+    alert(x);
+}
+
+function multiplicar()
+{
+    let x = Number(document.getElementById("n1").value);
+    x = x * 2;
+    console.log("valor de x" + x);
+    alert(x);
+}
+
+
+</script>
+
+</body>
+
+</html>
