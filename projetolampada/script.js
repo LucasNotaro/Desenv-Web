@@ -33,7 +33,10 @@ else if (lampada.getAttribute("src") == "./img/luzDesligada.gif")
     ligar();
 }
 
-function piscar()
-{
-alternar()
-} setInterval(piscar,500);
+//function piscar()
+//{
+//alternar()
+//} 
+
+
+setInterval(alternar,500);
