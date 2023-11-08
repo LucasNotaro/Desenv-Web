@@ -1,19 +1,24 @@
+/* EXEMPLO REM
+html{
+    font-size: 16px;
+}
+
+div{
+    font-size: 1.5rem;  
+} */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f0f0f0; 
     font-size: 16px;  
-
-
   }
 
-
-    .t1{ font-size: 1em; }
-    .t2{ font-size: 1.5em; }           
-
-
-
+    .t1
+    { font-size: 1em;}
+    .t2
+    { font-size: 1.5em; }           
 
   .container {
     width: 100%;
@@ -32,10 +37,50 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   .color-box {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
   }
+
+
   .measurement-info {
     text-align: center;
     margin-top: 10px;
   }
+
+  .color-box1 {
+    width: 50px;
+    height: 50px;
+    background-color: lightgreen;
+    
+  }
+
+  button {
+    text-align:center;
+  }
+
+.botao {
+  width: 50px;
+  height: 25px;
+}
+
+ul{
+  font-size: 16px;
+}
+li{
+  font-size: 2em;
+}
+
+
+.color-box2 {
+  width:  200pt;
+  height: 200pt;
+}
+
+
+ /* EXEMPLO VW e VH
+ elemento {
+    width: 100vw;
+    height: 100vh;
+}*/
+
+
