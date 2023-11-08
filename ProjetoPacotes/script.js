@@ -49,3 +49,40 @@ function calcularPacote()
 // let valor = document.querySelector("input[name='pacotes']:checked").value;
 
 
+calcularAdicionais();
+    valorEntrega();
+    let totalFinal = valorEntrega + totalAdicionais;
+    nome= document.getElementById('nome').value
+    document.getElementById("mensagem").innerHTML = `${nome} irá pagar ${valorEntrega} pela entrega e ${totalAdicionais} pelos adicionais `;
+}
+
+
+
+
+
+
+function totalCombo(){
+    var combo = document.querySelector("select").value;
+    var PrecoCombo = parseInt(combo);
+
+}
+
+function CalcularEntrega()
+{
+    let taxa = document.querySelectorAll("input[name='Entrega?']").length;
+    let valor =  document.querySelector("input[name='Entrega?']:checked").value;
+
+    for (var i=0; i < taxa; i++)
+    {
+        if (Entrega[i].checked == true)
+        {
+            valorEntrega = Number(Entrega[i].value);
+            break;
+        }
+    }
+}
+
+
+
+
+
