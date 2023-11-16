@@ -6,7 +6,7 @@ let totalFinal = 0;
 
 function calcularTotal(){
     valorCombo = Number(document.getElementById('combos').value);
-    valorEntrega = Number(document.getElementById('taxa').value);
+    valorEntrega = Number(document.querySelector('input[type="radio"]:checked').value);
     calcularAdicionais();
         totalFinal = totalAdicionais + valorCombo + valorEntrega;
     document.getElementById("mensagem").value = `Seu combo custará R$ ${valorCombo} com R$ ${totalAdicionais} de adicionais e R$ ${valorEntrega} de entrega`;
