@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Flexbox</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .flex-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .flex-item {
+            width: 200px;
+            height: 150px;
+            background-color: #f0f0f0;
+            border: 1px solid #999;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Guia de Flexbox</h1>
+    <p>Flexbox é um modelo de layout CSS que facilita o design responsivo e flexível de elementos em um contêiner.</p>
+
+    <div class="container">
+        <h2>Principais Propriedades:</h2>
+        <ul>
+            <li><strong>display:</strong> Define um contêiner como um contêiner flexível.</li>
+            <li><strong>flex-direction:</strong> Define a direção dos itens no contêiner (row, row-reverse, column, column-reverse).</li>
+            <li><strong>justify-content:</strong> Alinhamento dos itens ao longo do eixo principal (flex-start, flex-end, center, space-between, space-around).</li>
+            <li><strong>align-items:</strong> Alinhamento dos itens ao longo do eixo transversal (flex-start, flex-end, center, baseline, stretch).</li>
+            <li><strong>flex-wrap:</strong> Define se os itens devem quebrar em várias linhas ou não (nowrap, wrap, wrap-reverse).</li>
+            <li><strong>flex:</strong> Define a capacidade de um item flexível crescer ou encolher para preencher o espaço disponível.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h2>Exemplos de Aplicação:</h2>
+        <div class="flex-container">
+            <div class="flex-item">1</div>
+            <div class="flex-item">2</div>
+            <div class="flex-item">3</div>
+            <div class="flex-item">4</div>
+            <div class="flex-item">5</div>
+        </div>
+        <p>Experimente alterar as propriedades CSS no código para ver como os itens se ajustam.</p>
+    </div>
+
+    <div class="container">
+        <h2>Instruções de Funcionamento:</h2>
+        <p>Para utilizar Flexbox, siga estes passos:</p>
+        <ol>
+            <li>Crie um contêiner e defina <code>display: flex</code> nele.</li>
+            <li>Aplique propriedades como <code>flex-direction</code>, <code>justify-content</code>, e <code>align-items</code> conforme necessário para posicionar os itens.</li>
+            <li>Estilize os itens individuais usando propriedades como <code>flex</code> para controle do tamanho, <code>order</code> para alterar a ordem, entre outras.</li>
+        </ol>
+    </div>
+</body>
+</html>

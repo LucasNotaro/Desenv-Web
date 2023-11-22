@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Avançado de Flexbox</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .container {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .flex-item {
+            width: 200px;
+            height: 150px;
+            background-color: #f0f0f0;
+            border: 1px solid #999;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .container p {
+            margin-bottom: 10px;
+        }
+        .container ul {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Guia Avançado de Flexbox</h1>
+    <div class="container">
+        <h2>Principais Propriedades do Flexbox:</h2>
+        <ul>
+            <li><strong>display:</strong> Define um contêiner como um contêiner flexível.</li>
+            <li><strong>flex-direction:</strong> Define a direção dos itens no contêiner (row, row-reverse, column, column-reverse).</li>
+            <li><strong>justify-content:</strong> Alinhamento dos itens ao longo do eixo principal (flex-start, flex-end, center, space-between, space-around).</li>
+            <li><strong>align-items:</strong> Alinhamento dos itens ao longo do eixo transversal (flex-start, flex-end, center, baseline, stretch).</li>
+            <li><strong>flex-wrap:</strong> Define se os itens devem quebrar em várias linhas ou não (nowrap, wrap, wrap-reverse).</li>
+            <li><strong>flex:</strong> Define a capacidade de um item flexível crescer ou encolher para preencher o espaço disponível.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h2>Exemplos de Aplicação:</h2>
+        <div class="flex-container">
+            <div class="flex-item">1</div>
+            <div class="flex-item">2</div>
+            <div class="flex-item">3</div>
+            <div class="flex-item">4</div>
+            <div class="flex-item">5</div>
+            <div class="flex-item">6</div>
+        </div>
+        <p>Experimente alterar as propriedades CSS no código para ver como os itens se ajustam.</p>
+    </div>
+
+    <div class="container">
+        <h2>Instruções de Funcionamento:</h2>
+        <ol>
+            <li>Crie um contêiner e defina <code>display: flex</code> nele.</li>
+            <li>Aplique propriedades como <code>flex-direction</code>, <code>justify-content</code>, e <code>align-items</code> conforme necessário para posicionar os itens.</li>
+            <li>Estilize os itens individuais usando propriedades como <code>flex</code> para controle do tamanho, <code>order</code> para alterar a ordem, entre outras.</li>
+            <li>Experimente também as propriedades de alinhamento de itens individuais, como <code>align-self</code>.</li>
+        </ol>
+    </div>
+
+    <div class="container">
+        <h2>Exemplo de Layout Responsivo:</h2>
+        <div class="flex-container">
+            <div class="flex-item" style="flex: 1">Item 1</div>
+            <div class="flex-item" style="flex: 2">Item 2 (flex: 2)</div>
+            <div class="flex-item" style="flex: 1">Item 3</div>
+        </div>
+        <p>Experimente redimensionar a janela do navegador para ver o layout responsivo em ação.</p>
+    </div>
+
+    <div class="container">
+        <h2>Flexbox com Alinhamento Vertical:</h2>
+        <div class="flex-container" style="height: 300px; align-items: flex-start;">
+            <div class="flex-item">Topo</div>
+            <div class="flex-item">Meio</div>
+            <div class="flex-item">Fundo</div>
+        </div>
+        <p>Altere a propriedade <code>align-items</code> para ver como os itens são alinhados verticalmente.</p>
+    </div>
+
+</body>
+</html>
