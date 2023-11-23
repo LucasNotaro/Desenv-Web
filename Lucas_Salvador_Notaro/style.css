@@ -1,0 +1,38 @@
+h4{
+    font-family: 'Stick', sans-serif; 
+    }
+
+    .imagens{
+        border-radius: 45%;
+        width: 185px; 
+        height: 150px;
+        border: 1px solid black;
+    }
+
+    .promocao-conteiner {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .promocao-item {
+        text-align: center;
+        margin: 10px;
+    }
+    
+    .rodape {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    body{
+        background-color: rgb(236, 234, 193);
+    }
+
+    .informacoes {
+        background-color:rgb(221, 216, 118);
+        padding: 20px;
+    }
+    border{
+        color: blue
+    }
