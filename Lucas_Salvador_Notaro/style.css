@@ -7,7 +7,8 @@ h4{
         width: 185px; 
         height: 150px;
         border: 1px solid black;
-    }
+        transition: width 0.3s ease; /* animação de transição */
+}
 
     .promocao-conteiner {
         display: flex;
@@ -36,3 +37,7 @@ h4{
     border{
         color: blue
     }
+
+    .imagens img:hover {
+        width: 300px; /* largura ao passar o mouse por cima */
+      }
