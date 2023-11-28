@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Cadastro</h1>
+
+    <form>
+        <div>
+            <label for="cidade">Nome</label>
+            <input type="text" name="nome" id="nome" maxlength="30">
+       
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha">
+        </div>
+        <p></p>
+        <p></p>
+        <div>
+            <label for="cep">CEP</label>
+            <input type="text" name="cep" id="cep"> <h3>Cidade:...........</h3>
+        </div>
+
+        <div>
+            <label for="idade">Idade</label>
+            <input type="text" name="idade" id="idade">
+        </div>
+        
+        <div>
+            <label for="aceita-termos">Aceita os Termos:</label>
+            <input type="radio" id="aceita" name="opcao" value="sim">
+            <label for="sim">Sim</label>
+            <input type="radio" id="nao" name="opcao" value="nao">
+            <label for="nao">Não</label>
+        </div>
+
+    </form>
+    <p></p>
+    <p></p>
+    <div>
+        <input type="button" value="Pesquisar CEP" id="pesquisarCep">
+        <input type="button" value="Mostar Idade" id="CalcularIdade">
+        <input type="button" value="Cadastrar" id="verificarCadastro">
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let mostrarIdade = document.getElementById('CalcularIdade');
+            mostrarIdade.addEventListener('click', () => {
+                let idade = document.getElementById('idade').value;
+                let idadeMais30 = parseInt(idade) + 30;
+                alert('A idade inserida é: ' + idadeMais30);
+            });
+
+            let verificarBotao = document.getElementById('verificarCadastro');
+            verificarBotao.addEventListener('click', () => {
+                verificarCadastro();
+            });
+        });
+
+        function verificarCadastro() {
+            var termosAceitos = document.getElementById("aceita").checked;
+
+            if (termosAceitos) {
+                alert("Cadastro com sucesso!");
+            } else {
+                alert("Aceite os termos");
+            }
+        }
+    </script>
+</body>
+</html>
