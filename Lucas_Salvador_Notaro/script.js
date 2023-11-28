@@ -3,7 +3,7 @@ let valorCombo = 0;
 let totalFinal = 0;
 
 function calcularTotal() {
-    let quantidadeCombo1 = parseInt(document.getElementById("qtdCombo1").value) || 0;
+    let quantidadeCombo1 = parseInt(document.getElementById("qtdCombo1").value);
     let quantidadeCombo2 = parseInt(document.getElementById("qtdCombo2").value);
     let quantidadeCombo3 = parseInt(document.getElementById("qtdCombo3").value);
   
