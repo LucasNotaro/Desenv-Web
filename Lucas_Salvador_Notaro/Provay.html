@@ -36,29 +36,29 @@
                 <div class="promocao-item">
                     <h4>Promoção 1</h4>
                     <img src="Foto1.jpg" class="imagens">
-                    <p><input type="radio" name="lanche"> R$ 40,00 </p>
-                    <p><label>Qtd&nbsp</label><input type="text" size="30"></p>
+                    <p><input type="radio" id="combo1" name="lanche" value="40"> R$ 40,00 </p>
+                    <p><label>Qtd&nbsp</label><input type="text" size="30" id="qtdCombo1"></p>
                 </div>
             
                 <div class="promocao-item">
                     <h4>Promoção 2</h4>
                     <img src="Foto2.jpg" class="imagens">
-                    <p><input type="radio" name="lanche"> R$ 60,00 </p>
-                    <p><label>Qtd&nbsp</label><input type="text" size="30"></p>
+                    <p><input type="radio" id="combo2" name="lanche" value="60"> R$ 60,00 </p>
+                    <p><label>Qtd&nbsp</label><input type="text" size="30" id="qtdCombo2"></p>
                 </div>
             
                 <div class="promocao-item">
                     <h4>Promoção 3</h4>
                     <img src="foto3.webp" class="imagens">
-                    <p><input type="radio" name="lanche"> R$ 60,00 </p>
-                    <p><label>Qtd&nbsp</label><input type="text" size="30"></p>
+                    <p><input type="radio" id="combo3" name="lanche" value="60"> R$ 60,00 </p>
+                    <p><label>Qtd&nbsp</label><input type="text" size="30" id="qtdCombo3"></p>
                 </div>
             </div>
       
             <label >Adicionais:</label>
             <div>
-            <input type="checkbox" > Batata R$ 10,00
-            <input type="checkbox" > Cebola R$ 5,00
+            <input type="checkbox" id="batata" name="adicionais" value="10"> Batata R$ 10,00
+            <input type="checkbox" id="cebola" name="adicionais" value="5"> Cebola R$ 5,00
             </div>
   
         <div class="informacoes">    
@@ -70,7 +70,7 @@
                 </div>
 
                 <div>
-                <label class="total" >Total: </label>
+                <label class="total"  id="total" >Total: </label>
                 </div>
 
                 <div>
@@ -78,7 +78,7 @@
                 </div>
             
                 <div>
-                <label class="total" >Total com Desconto: </label>
+                <label class="total">Total com Desconto: </label>
                 </div>
             </div>
         </div>

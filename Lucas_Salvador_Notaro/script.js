@@ -1,41 +1,34 @@
+let totalAdicionais = 0;
+let valorCombo = 0;
+let totalFinal = 0;
+
 function calcularTotal() {
-    const promocoes = document.getElementsByName('lanche');
-    const quantidades = document.querySelectorAll('input[type="text"]');
-    const adicionais = document.querySelectorAll('input[type="checkbox"]');
-
-    let total = 0;
-
-    // Calcular total baseado na promoção selecionada e na quantidade
-    for (let i = 0; i < promocoes.length; i++) {
-        if (promocoes[i].checked) {
-            const precoPromocao = parseFloat(promocoes[i].parentNode.textContent.trim().split(' ')[1]);
-            const quantidade = parseFloat(quantidades[i].value);
-            total += precoPromocao * quantidade;
-        }
+    let quantidadeCombo1 = parseInt(document.getElementById("qtdCombo1").value) || 0;
+    let quantidadeCombo2 = parseInt(document.getElementById("qtdCombo2").value);
+    let quantidadeCombo3 = parseInt(document.getElementById("qtdCombo3").value);
+  
+    valorCombo = 0;
+    if (document.getElementById('combo1').checked) {
+      valorCombo = Number(document.getElementById('combo1').value) * quantidadeCombo1;
+    } else if (document.getElementById('combo2').checked) {
+      valorCombo = Number(document.getElementById('combo2').value) * quantidadeCombo2;
+    } else if (document.getElementById('combo3').checked) {
+      valorCombo = Number(document.getElementById('combo3').value) * quantidadeCombo3;
     }
+  
+    calcularAdicionais();
+    totalFinal = totalAdicionais + valorCombo;
+    document.getElementById("total").textContent = "Total: R$ " + totalFinal.toFixed(2);
+  }
+  
 
-    // Adicionar valores dos adicionais selecionados
-    adicionais.forEach(adicional => {
-        if (adicional.checked) {
-            if (adicional.nextSibling.textContent.includes('Batata')) {
-                total += 10;
-            } else if (adicional.nextSibling.textContent.includes('Cebola')) {
-                total += 5;
-            }
-        }
-    });
-
-    // Mostrar o total na página
-    const totalLabel = document.querySelector('.total');
-    totalLabel.textContent = `Total: R$ ${total.toFixed(2)}`;
-
-    // Exemplo de desconto (10%)
-    const desconto = total * 0.1;
-    const totalComDesconto = total - desconto;
-
-    const descontoLabel = document.querySelectorAll('.total')[1];
-    const totalComDescontoLabel = document.querySelectorAll('.total')[2];
-
-    descontoLabel.textContent = `Desconto: R$ ${desconto.toFixed(2)}`;
-    totalComDescontoLabel.textContent = `Total com Desconto: R$ ${totalComDesconto.toFixed(2)}`;
-}
+  function calcularAdicionais() {
+    totalAdicionais = 0;
+  
+    let adicionais = document.querySelectorAll("input[name='adicionais']");
+    for (let i = 0; i < adicionais.length; i = i + 1) {
+      if (adicionais[i].checked == true) {
+        totalAdicionais = totalAdicionais + parseFloat(adicionais[i].value);
+      }
+    }
+  }
