@@ -1,0 +1,8 @@
+:root {
+    --variable-collection-bot-es: rgba(222, 222, 222, 1);
+    --variable-collection-fundo: rgba(42, 39, 40, 1);
+    --variable-collection-letras: rgba(0, 0, 129, 1);
+    --variable-collection-fontes-fundos-claros: rgba(222, 222, 222, 1);
+    --variable-collection-aaaaaaa: var(--variable-collection-fontes-fundos-claros);
+  }
+  
